@@ -14,4 +14,4 @@
 - docker push baohuynhgia/udagram-api-user:v1
 - docker push baohuynhgia/udagram-frontend:v1
 - docker push baohuynhgia/udagram-reverseproxy:v1
-#trigger v1
+#trigger v2
