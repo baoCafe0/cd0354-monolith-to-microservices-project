@@ -7,6 +7,6 @@ data:
   POSTGRES_HOST: baohgproject3.ctv1sbnwx5fg.us-east-1.rds.amazonaws.com
   AWS_REGION: us-east-1
   AWS_PROFILE: baohg
-  AWS_S3_BUCKET: arn:aws:s3:::baohg-bucket
+  AWS_S3_BUCKET: arn:aws:s3:::baohg-p3-bucket
   JWT_SECRET: hello
   URL: https://oidc.eks.us-east-1.amazonaws.com:8100
