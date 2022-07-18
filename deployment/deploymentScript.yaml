@@ -1,0 +1,15 @@
+# Apply env variables and secrets
+kubectl apply -f aws-secret.yaml
+kubectl apply -f env-secret.yaml
+kubectl apply -f env-configmap.yaml
+# Deployments - Double check the Dockerhub image name and version in the deployment files
+kubectl apply -f deployment/api-feed-deployment.yaml
+kubectl apply -f deployment/api-user-deployment.yaml
+kubectl apply -f deployment/frontend-deployment.yaml
+kubectl apply -f deployment/reverseproxy-deployment.yaml
+# Do the same for other three deployment files
+# Service
+kubectl apply -f deployment/api-feed-service.yaml
+kubectl apply -f deployment/api-user-service.yaml
+kubectl apply -f deployment/frontend-service.yaml
+kubectl apply -f deployment/reverseproxy-service.yaml
