@@ -15,12 +15,12 @@ script:
   # Tagging
   - docker tag udagram-api-feed baohuynhgia/udagram-api-feed:v2
   - docker tag udagram-api-user baohuynhgia/udagram-api-user:v2
-  - docker tag udagram-frontend baohuynhgia/udagram-frontend:v4
+  - docker tag udagram-frontend baohuynhgia/udagram-frontend:v5
   - docker tag reverseproxy baohuynhgia/reverseproxy:v3
   # Push
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push baohuynhgia/udagram-api-feed:v2
   - docker push baohuynhgia/udagram-api-user:v2
-  - docker push baohuynhgia/udagram-frontend:v4
+  - docker push baohuynhgia/udagram-frontend:v5
   - docker push baohuynhgia/reverseproxy:v3
   #trigger v2
